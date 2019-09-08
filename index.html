@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nick Reed</title>
+    <link rel='shortcut icon' href="assets/images/favicon-16x16.png" type='image/x-icon' />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +14,7 @@
 <body>
 
     <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar" >
         <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" width="150" height="150" class="d-inline-block align-top"
                 alt="">
@@ -24,22 +25,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+                <a class="nav-item nav-link active" href="#about-container">About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#portfolio-container">Portfolio</a>
+                <a class="nav-item nav-link" href="#contact-container">Contact</a>
             </div>
         </div>
     </nav>
     
     <!-- About -->
-    <div class="container-fluid m-4">
+    <div class="container-fluid" id="about-container">
         <div class="row m-4">
             <div class="col-sm border-bottom text-secondary">
                 <h2>About Me</h2>
             </div>
             <div class="row m-4">
                 <div class="col-sm-2">
-                    <img src="assets/images/me.PNG" alt="Picture of Nick Reed" class="rounded-lg">
+                    <img src="assets/images/0.jpg" alt="Picture of Nick Reed" class="rounded-lg shadow">
                 </div>
                 <div class="col-sm-9">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo in perferendis ea natus, ipsum doloribus praesentium
@@ -58,71 +59,106 @@
     </div>
 
     <!-- Portfolio -->
-    <div class="container-fluid m-4">
+    <div class="container-fluid" id="portfolio-container">
         <div class="row m-4">
             <div class="col-sm border-bottom text-secondary">
                 <h2>Portfolio</h2>
             </div>
         </div>
         <div class="row m-4">
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-header">
-                        Quote
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                    </div>
+            <div class="card m-2 shadow-sm" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/Marvel.png" alt="Word Guess Game image">
+                <div class="card-body p-3" id="cardBody">
+                    <p class="card-text text text-center mb-4">This is a Marvel character themed word guessing game. </p>
+                    <a href="https://niccor83.github.io/Word-Guess-Game/" class="btn btn-outline-secondary mx-3">View App</a>
+                    <a href="https://github.com/niccor83/Word-Guess-Game" class="btn btn-outline-secondary">View Repo</a>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-header">
-                        Quote
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
+            <div class="card m-2 shadow-sm" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/crystalCollector.png" alt="Crystal Collector">
+                <div class="card-body p-3" id="cardBody">
+                    <p class="card-text text text-center mb-3">This app generates random numbers for users to match to total. </p>
+                    <a href="https://niccor83.github.io/unit-4-game/" class="btn btn-outline-secondary mx-3">View App</a>
+                    <a href="https://github.com/niccor83/unit-4-game" class="btn btn-outline-secondary">View Repo</a>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-header">
-                        Quote
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
+            <div class="card m-2 shadow-sm" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/wrestlingRing.png" alt="Nacho Libre Trivia Game">
+                <div class="card-body p-3" id="cardBody">
+                    <p class="card-text text text-center mb-3">This is a Nacho Libre themed trivia game. </p>
+                    <a href="https://niccor83.github.io/TriviaGame/" class="btn btn-outline-secondary mx-3">View App</a>
+                    <a href="https://github.com/niccor83/TriviaGame" class="btn btn-outline-secondary">View Repo</a>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-header">
-                        Quote
+            <div class="card m-2 shadow-sm" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/GifTastic.png" alt="GifTastic App Logo">
+                <div class="card-body p-3" id="cardBody">
+                    <p class="card-text text text-center mb-3">This app displays gifs and allows user to search for gifs. </p>
+                    <a href="https://niccor83.github.io/GifTastic/" class="btn btn-outline-secondary mx-3">View App</a>
+                    <a href="https://github.com/niccor83/GifTastic" class="btn btn-outline-secondary">View Repo</a>
+                </div>
+            </div>
+            <div class="card m-2 shadow-sm" style="width: 18rem;">
+                <img class="card-img-top" src="assets/images/train.jpg" alt="Train Schedule App">
+                <div class="card-body p-3" id="cardBody">
+                    <p class="card-text text text-center mb-3">This app allows the user see the next train arrival after entering start time and frequency. </p>
+                    <a href="https://niccor83.github.io/Train-Activity/" class="btn btn-outline-secondary mx-3">View App</a>
+                    <a href="https://github.com/niccor83/Train-Activity" class="btn btn-outline-secondary">View Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid" id="contact-container">
+        <div class="row m-4">
+            <div class="col-sm border-bottom text-secondary">
+                <h2>Contact</h2>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="col-sm">
+                <div class="card my-2 shadow-sm">
+                    <div class="card-header bg-light text-secondary">
+                        <strong>Contact Information</strong>
                     </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                            </footer>
-                        </blockquote>
+                    <div class="card-body" id="cardBody">
+                        <ul>
+                            <li>Email: niccor83@gmail.com</li>
+                            <li>Phone: 801-390-1514</li>
+                            <li><a href="Nick Reed Resume - Sept 2019.pdf">My Resume</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    
+
+    <nav class="navbar-bottom navbar-light bg-light p-2">
+        <div class="container-fluid" id="contact-container">
+            <div class="row m-4">
+                <div class="col-sm text-secondary text-center">
+                    <a href="https://www.linkedin.com/in/nick-reed-b294422b?trk=profile-badge" id="media-links"><img src="assets/images/linkedin-logo.png"
+                            height="32px" width="32px"></img></a>
+                    <a href="https://github.com/niccor83" id="media-links"><img
+                            src="assets/images/GitHub-Mark-32px.png"></img></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid" id="contact-container">
+            <div class="row m-4">
+                <div class="col-sm text-secondary text-center">
+                    <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a>
+                        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -1,0 +1,34 @@
+
+
+#cardBody   {
+    padding: 0%;
+    
+}
+
+#cardImg {
+    height: 175px;
+    width: 100%;
+}
+
+#navbar {
+    width: 100%;
+    
+}
+
+#card {
+    background-color: #d9d9d9;
+}
+
+#media-links    {
+    margin: 0px 5px
+}
+
+/* #about-container    {
+    margin-top: 200px;
+} */
+
+.card-img-top {
+    width: 100%;
+    height: 11vw;
+    object-fit: cover;
+}
