@@ -1,4 +1,7 @@
 
+body    {
+    
+}
 
 #cardBody   {
     padding: 0%;
@@ -13,6 +16,15 @@
 #navbar {
     width: 100%;
     
+}
+
+#myPic  {
+    float: left;
+    margin: 10px 20px 10px 0px;
+}
+
+#btmBorder  {
+    border-color: goldenrod;
 }
 
 #card {
