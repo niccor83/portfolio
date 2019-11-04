@@ -1,6 +1,6 @@
 
 body    {
-    
+    background-image: url(../images/white.jpg);
 }
 
 #cardBody   {
@@ -15,6 +15,8 @@ body    {
 
 #navbar {
     width: 100%;
+    background-color: rgb(7, 4, 0);
+    background-image: url(../images/dark-honeycomb.png);
     
 }
 
@@ -29,6 +31,25 @@ body    {
 
 #card {
     background-color: #d9d9d9;
+}
+
+#footer {
+    background-image: url(../images/dark-honeycomb.png);
+}
+
+#resume {
+    color: goldenrod;
+}
+
+#resume:hover {
+    color: Grey;
+}
+#media-links{
+    color: white;
+}
+
+#media-links:hover{
+    color: grey;
 }
 
 #media-links    {
